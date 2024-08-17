@@ -8,7 +8,7 @@ ret="\033[1;0m"
 def get_parser():
     parser = argparse.ArgumentParser(description='Power by ❀flower❀')
     parser.add_argument("-t",dest="target",help="Input Target png",required=True)
-    parser.add_argument("-o", dest="output_filename", help='default: output.png ; If with -o, output upon completion.',default="output.png")
+    parser.add_argument("-o", dest="output_filename", help='default: output.png ; If with -o, output upon completion.')
     return parser.parse_args()
 def crc_cmp(bin_data):
     r_crc = bin_data[29:33].hex()
